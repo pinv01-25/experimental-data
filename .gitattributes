@@ -1,0 +1,6 @@
+# Preserve the generated CSV files byte-for-byte, including their CRLF endings.
+*.csv -text
+
+*.json text eol=lf
+*.md text eol=lf
+*.sh text eol=lf

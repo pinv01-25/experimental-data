@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,355,70.8056,71.0000,54.4771,1.0000,308.0000,26.5000,110.0000,154.6000
+Fixed-Time MOPC (60s/25s),routeLength,355,176.0152,225.7000,87.5498,0.0000,248.3900,106.2000,239.7200,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,355,144.5149,81.2800,164.7113,0.0000,595.5600,1.1400,300.3800,455.9400
+Fixed-Time MOPC (60s/25s),timeLoss,355,56.2061,52.9100,49.6765,0.0000,291.8000,9.7950,90.5050,134.8800
+Fixed-Time MOPC (60s/25s),waitingTime,355,36.0592,29.0000,38.6192,0.0000,234.0000,0.0000,59.5000,92.8000
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,3.9970,2.9595,2.6654,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,14.3890,10.6542,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.3842,0.2497,,,,,,
+Dynamic Optimization,duration,984,61.7551,43.0000,59.1235,1.0000,342.0000,31.0000,73.0000,192.8500
+Dynamic Optimization,routeLength,984,191.1447,225.7000,73.2872,0.0000,248.3900,193.6700,239.7200,241.3000
+Dynamic Optimization,departDelay,984,537.6857,19.8600,933.0677,0.0000,3118.8000,1.1200,415.2900,2654.3480
+Dynamic Optimization,timeLoss,984,45.9264,23.9650,57.6874,0.0000,324.5900,11.7100,55.0325,175.0555
+Dynamic Optimization,waitingTime,984,26.0711,2.5000,46.5744,0.0000,259.0000,0.0000,30.0000,136.0000
+Dynamic Optimization,avg_speed_ms,,4.8493,5.1378,2.5887,,,,,
+Dynamic Optimization,avg_speed_kmh,,17.4574,18.4961,,,,,,
+Dynamic Optimization,time_efficiency,,0.4362,0.4347,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.011398
+Mann-Whitney U Test,"U=202009.50, p=0.000012"
+Cohen's d Effect Size,d=0.1562 (small)
+Bootstrap 95% CI for Mean Diff,"[2.2672, 15.8753]"
+Point Estimate (A - B),9.0506
+Percent Improvement,+12.78%
+
+Interpretation
+,Moderate evidence of difference (p < 0.05)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+62.57%
+reason,El throughput sube +177.2% (355 → 984 viajes) y el tiempo de sistema mejora.

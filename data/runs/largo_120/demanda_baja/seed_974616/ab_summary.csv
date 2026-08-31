@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time ciclo largo (120s/57s),duration,1423,71.4722,67.0000,62.7585,1.0000,288.0000,15.0000,113.0000,183.9000
+Fixed-Time ciclo largo (120s/57s),routeLength,1423,151.0480,200.6700,87.1270,0.0000,248.3900,96.3200,226.3150,245.8900
+Fixed-Time ciclo largo (120s/57s),departDelay,1423,200.0196,34.5600,363.5663,0.0000,1879.6000,0.8400,253.7600,1173.6360
+Fixed-Time ciclo largo (120s/57s),timeLoss,1423,58.9896,54.0000,57.8088,0.0000,269.7500,5.5900,95.2750,165.8940
+Fixed-Time ciclo largo (120s/57s),waitingTime,1423,43.5826,38.0000,47.1352,0.0000,233.0000,0.0000,70.0000,130.0000
+Fixed-Time ciclo largo (120s/57s),avg_speed_ms,,4.0310,2.4107,3.0606,,,,,
+Fixed-Time ciclo largo (120s/57s),avg_speed_kmh,,14.5117,8.6785,,,,,,
+Fixed-Time ciclo largo (120s/57s),time_efficiency,,0.4055,0.2236,,,,,,
+Dynamic Optimization,duration,1664,35.9621,31.0000,29.0707,1.0000,149.0000,12.0000,54.2500,89.8500
+Dynamic Optimization,routeLength,1664,157.3791,203.1700,84.3271,0.0000,248.3900,100.7000,226.9300,245.8900
+Dynamic Optimization,departDelay,1664,93.5753,0.9600,177.2903,0.0000,579.8000,0.4800,15.4400,483.6440
+Dynamic Optimization,timeLoss,1664,23.0268,11.6600,25.1155,0.0000,129.5600,2.6525,38.1100,74.1385
+Dynamic Optimization,waitingTime,1664,10.8720,0.0000,15.9154,0.0000,87.0000,0.0000,22.0000,44.8500
+Dynamic Optimization,avg_speed_ms,,6.0353,5.9580,2.8566,,,,,
+Dynamic Optimization,avg_speed_kmh,,21.7270,21.4486,,,,,,
+Dynamic Optimization,time_efficiency,,0.5520,0.5534,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=1516925.00, p=0.000000"
+Cohen's d Effect Size,d=0.7451 (medium)
+Bootstrap 95% CI for Mean Diff,"[31.9528, 39.0898]"
+Point Estimate (A - B),35.5101
+Percent Improvement,+49.68%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+41.16%
+reason,El throughput sube +16.9% (1423 → 1664 viajes) y el tiempo de sistema mejora.

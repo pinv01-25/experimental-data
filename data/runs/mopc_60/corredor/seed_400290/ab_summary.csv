@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,337,77.4866,76.0000,57.8548,1.0000,319.0000,30.0000,120.0000,167.0000
+Fixed-Time MOPC (60s/25s),routeLength,337,174.2936,225.7000,88.1319,0.0000,248.3900,103.7000,239.7200,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,337,134.4230,77.0800,149.7581,0.0000,527.5600,1.8800,226.7200,420.4800
+Fixed-Time MOPC (60s/25s),timeLoss,337,62.9883,57.1200,52.7212,0.0000,301.7400,12.2900,99.8000,149.7400
+Fixed-Time MOPC (60s/25s),waitingTime,337,41.1929,33.0000,40.4569,0.0000,265.0000,0.0000,63.0000,118.2000
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,3.8319,2.4533,2.8469,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,13.7949,8.8317,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.3731,0.2206,,,,,,
+Dynamic Optimization,duration,1014,60.9359,45.0000,56.1327,1.0000,374.0000,32.0000,69.0000,184.3500
+Dynamic Optimization,routeLength,1014,191.2267,225.7000,72.6529,0.0000,248.3900,193.6700,239.7200,241.3000
+Dynamic Optimization,departDelay,1014,570.9447,25.4400,952.4626,0.0000,3069.1200,1.4100,552.8200,2691.6140
+Dynamic Optimization,timeLoss,1014,45.0818,27.0700,54.5519,0.0000,358.3000,12.5125,50.7775,167.0275
+Dynamic Optimization,waitingTime,1014,25.2584,3.0000,44.6148,0.0000,298.0000,0.0000,28.7500,130.7000
+Dynamic Optimization,avg_speed_ms,,4.7620,4.8922,2.5048,,,,,
+Dynamic Optimization,avg_speed_kmh,,17.1431,17.6121,,,,,,
+Dynamic Optimization,time_efficiency,,0.4272,0.4126,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=202374.50, p=0.000000"
+Cohen's d Effect Size,d=0.2926 (small)
+Bootstrap 95% CI for Mean Diff,"[9.5267, 23.5039]"
+Point Estimate (A - B),16.5507
+Percent Improvement,+21.36%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+63.37%
+reason,El throughput sube +200.9% (337 → 1014 viajes) y el tiempo de sistema mejora.

@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,1860,66.4554,53.0000,64.6150,1.0000,314.0000,2.0000,111.0000,191.0000
+Fixed-Time MOPC (60s/25s),routeLength,1860,134.2310,128.1000,93.8757,0.0000,248.3900,14.7300,224.3800,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,1860,884.0723,818.8000,756.2082,0.0000,2701.1600,105.9900,1468.6200,2257.8620
+Fixed-Time MOPC (60s/25s),timeLoss,1860,55.3289,42.5100,58.6872,0.0000,293.2800,0.1200,92.4925,172.4025
+Fixed-Time MOPC (60s/25s),waitingTime,1860,36.9742,28.0000,43.2898,0.0000,223.0000,0.0000,62.0000,127.0500
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,4.1277,2.4455,3.2556,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,14.8597,8.8038,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.4412,0.2344,,,,,,
+Dynamic Optimization,duration,2295,51.7678,27.0000,66.0239,1.0000,473.0000,2.0000,69.0000,197.0000
+Dynamic Optimization,routeLength,2295,133.5608,124.7200,92.3067,0.0000,248.3900,14.7300,222.7000,241.3000
+Dynamic Optimization,departDelay,2295,691.3250,397.1600,727.2364,0.0000,2860.8400,45.9800,1023.5400,2141.7320
+Dynamic Optimization,timeLoss,2295,40.6435,12.8900,61.8804,0.0000,457.3900,0.1400,50.6150,179.0350
+Dynamic Optimization,waitingTime,2295,26.5473,0.0000,50.5766,0.0000,399.0000,0.0000,30.0000,139.0000
+Dynamic Optimization,avg_speed_ms,,5.0663,5.2300,3.0412,,,,,
+Dynamic Optimization,avg_speed_kmh,,18.2387,18.8280,,,,,,
+Dynamic Optimization,time_efficiency,,0.5207,0.5083,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=2417302.50, p=0.000000"
+Cohen's d Effect Size,d=0.2246 (small)
+Bootstrap 95% CI for Mean Diff,"[10.7193, 18.6800]"
+Point Estimate (A - B),14.6876
+Percent Improvement,+22.10%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+1.70%
+reason,El throughput sube +23.4% (1860 → 2295 viajes) y el tiempo de sistema mejora.

@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,1580,66.7013,62.0000,54.4009,1.0000,280.0000,18.0000,99.0000,165.0500
+Fixed-Time MOPC (60s/25s),routeLength,1580,155.0523,203.1700,84.9497,0.0000,248.3900,96.6050,225.7000,245.8900
+Fixed-Time MOPC (60s/25s),departDelay,1580,136.1093,39.3200,177.3924,0.0000,695.4400,0.7600,233.0100,588.4300
+Fixed-Time MOPC (60s/25s),timeLoss,1580,53.8756,45.9850,49.4277,0.0000,263.8900,7.3325,81.8350,146.6930
+Fixed-Time MOPC (60s/25s),waitingTime,1580,34.4228,28.0000,36.5561,0.0000,207.0000,0.0000,52.0000,106.1000
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,3.7387,2.6603,2.6428,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,13.4592,9.5772,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.3794,0.2381,,,,,,
+Dynamic Optimization,duration,1690,35.9136,30.0000,28.5699,1.0000,155.0000,12.0000,55.0000,88.0000
+Dynamic Optimization,routeLength,1690,157.7529,203.1700,84.0147,0.0000,248.3900,100.7000,226.9300,245.8900
+Dynamic Optimization,departDelay,1690,52.2827,0.9600,95.1549,0.0000,339.7600,0.4800,22.5500,287.2260
+Dynamic Optimization,timeLoss,1690,22.9207,12.1150,24.4499,0.0000,134.1700,2.7950,39.2125,72.3365
+Dynamic Optimization,waitingTime,1690,10.9811,0.0000,15.7829,0.0000,107.0000,0.0000,22.0000,43.0000
+Dynamic Optimization,avg_speed_ms,,5.9882,5.8131,2.8316,,,,,
+Dynamic Optimization,avg_speed_kmh,,21.5575,20.9273,,,,,,
+Dynamic Optimization,time_efficiency,,0.5504,0.5347,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=1766236.00, p=0.000000"
+Cohen's d Effect Size,d=0.7155 (medium)
+Bootstrap 95% CI for Mean Diff,"[27.8017, 33.7183]"
+Point Estimate (A - B),30.7877
+Percent Improvement,+46.16%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+42.77%
+reason,Mejora de +42.8% con significancia estadística y throughput estable.

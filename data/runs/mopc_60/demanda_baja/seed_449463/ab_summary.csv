@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,1574,68.6741,63.0000,56.0080,1.0000,305.0000,18.0000,104.0000,173.3500
+Fixed-Time MOPC (60s/25s),routeLength,1574,154.9506,203.1700,85.0228,0.0000,248.3900,96.3200,225.7000,245.8900
+Fixed-Time MOPC (60s/25s),departDelay,1574,139.1874,28.8600,181.5984,0.0000,715.4800,0.7600,227.7600,599.7120
+Fixed-Time MOPC (60s/25s),timeLoss,1574,55.9082,47.2700,51.0622,0.0000,287.5700,7.4650,84.0175,155.4575
+Fixed-Time MOPC (60s/25s),waitingTime,1574,35.8386,28.0000,37.6634,0.0000,208.0000,0.0000,54.0000,112.3500
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,3.6408,2.6317,2.5802,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,13.1068,9.4740,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.3698,0.2351,,,,,,
+Dynamic Optimization,duration,1651,37.1272,30.0000,31.6913,1.0000,167.0000,12.0000,55.0000,100.0000
+Dynamic Optimization,routeLength,1651,156.8670,203.1700,84.4487,0.0000,248.3900,98.7000,226.9300,245.8900
+Dynamic Optimization,departDelay,1651,77.8100,0.9600,153.9888,0.0000,622.4000,0.4800,15.3200,465.6800
+Dynamic Optimization,timeLoss,1651,24.2458,11.5100,27.8957,0.0000,149.8400,2.6750,39.1150,84.1800
+Dynamic Optimization,waitingTime,1651,11.9188,0.0000,18.4605,0.0000,117.0000,0.0000,22.0000,52.0000
+Dynamic Optimization,avg_speed_ms,,5.9904,5.8929,2.8634,,,,,
+Dynamic Optimization,avg_speed_kmh,,21.5653,21.2144,,,,,,
+Dynamic Optimization,time_efficiency,,0.5514,0.5580,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=1719316.50, p=0.000000"
+Cohen's d Effect Size,d=0.6976 (medium)
+Bootstrap 95% CI for Mean Diff,"[28.4620, 34.7707]"
+Point Estimate (A - B),31.5469
+Percent Improvement,+45.94%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+43.19%
+reason,Mejora de +43.2% con significancia estadística y throughput estable.

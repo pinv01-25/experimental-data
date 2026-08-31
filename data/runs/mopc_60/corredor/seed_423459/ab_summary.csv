@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,334,69.6587,66.0000,55.6814,1.0000,343.0000,24.0000,112.0000,160.3500
+Fixed-Time MOPC (60s/25s),routeLength,334,173.5989,225.0400,88.2322,0.0000,248.3900,103.7000,239.7200,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,334,143.9090,82.4400,168.8404,0.0000,625.5600,1.1200,265.3700,487.6540
+Fixed-Time MOPC (60s/25s),timeLoss,334,55.2850,48.0050,50.8793,0.0000,322.7200,8.8650,90.9150,139.3010
+Fixed-Time MOPC (60s/25s),waitingTime,334,35.3533,26.5000,39.2108,0.0000,267.0000,0.0000,60.0000,97.3500
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,4.1578,3.1483,2.8424,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,14.9682,11.3339,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.3982,0.2585,,,,,,
+Dynamic Optimization,duration,1049,61.1344,49.0000,51.1621,1.0000,365.0000,33.0000,77.0000,180.6000
+Dynamic Optimization,routeLength,1049,191.3248,225.7000,72.0215,0.0000,248.3900,193.6700,239.7200,241.3000
+Dynamic Optimization,departDelay,1049,631.1338,26.5600,963.5795,0.0000,3047.5600,1.7200,1164.4400,2717.3040
+Dynamic Optimization,timeLoss,1049,45.3739,32.3700,49.4044,0.0000,348.4800,13.6500,59.2200,162.7740
+Dynamic Optimization,waitingTime,1049,25.3251,6.0000,40.7181,0.0000,292.0000,0.0000,34.0000,119.2000
+Dynamic Optimization,avg_speed_ms,,4.5591,4.2807,2.4568,,,,,
+Dynamic Optimization,avg_speed_kmh,,16.4126,15.4106,,,,,,
+Dynamic Optimization,time_efficiency,,0.4083,0.3618,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.008598
+Mann-Whitney U Test,"U=194524.50, p=0.002340"
+Cohen's d Effect Size,d=0.1630 (small)
+Bootstrap 95% CI for Mean Diff,"[1.7052, 15.0809]"
+Point Estimate (A - B),8.5243
+Percent Improvement,+12.24%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+63.06%
+reason,El throughput sube +214.1% (334 → 1049 viajes) y el tiempo de sistema mejora.

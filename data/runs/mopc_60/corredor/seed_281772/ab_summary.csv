@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,342,69.5146,66.5000,50.6321,1.0000,252.0000,27.2500,112.7500,150.0000
+Fixed-Time MOPC (60s/25s),routeLength,342,174.9677,225.7000,87.6776,0.0000,248.3900,104.3250,239.7200,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,342,142.6598,83.6400,161.2745,0.0000,589.5600,1.2700,248.9600,430.0720
+Fixed-Time MOPC (60s/25s),timeLoss,342,54.9502,50.2800,45.6610,0.0000,233.3300,10.3400,92.1350,132.0505
+Fixed-Time MOPC (60s/25s),waitingTime,342,34.4386,28.0000,33.0266,0.0000,175.0000,0.0000,59.7500,95.9500
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,4.0722,3.0253,2.8902,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,14.6601,10.8912,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.3880,0.2510,,,,,,
+Dynamic Optimization,duration,1010,61.0406,45.0000,57.1298,1.0000,317.0000,32.0000,68.7500,199.5500
+Dynamic Optimization,routeLength,1010,191.0911,225.7000,72.7646,0.0000,248.3900,193.6700,239.7200,241.3000
+Dynamic Optimization,departDelay,1010,557.3622,18.4200,940.7832,0.0000,3088.2800,1.1200,672.1500,2652.8220
+Dynamic Optimization,timeLoss,1010,45.1977,26.0650,55.5890,0.0000,302.6900,12.7375,50.8700,182.4300
+Dynamic Optimization,waitingTime,1010,25.0851,4.0000,44.3811,0.0000,248.0000,0.0000,26.0000,138.1000
+Dynamic Optimization,avg_speed_ms,,4.7707,4.9245,2.4871,,,,,
+Dynamic Optimization,avg_speed_kmh,,17.1743,17.7282,,,,,,
+Dynamic Optimization,time_efficiency,,0.4305,0.4176,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.017197
+Mann-Whitney U Test,"U=200221.50, p=0.000010"
+Cohen's d Effect Size,d=0.1525 (small)
+Bootstrap 95% CI for Mean Diff,"[2.2090, 14.9827]"
+Point Estimate (A - B),8.4740
+Percent Improvement,+12.19%
+
+Interpretation
+,Moderate evidence of difference (p < 0.05)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+57.06%
+reason,El throughput sube +195.3% (342 → 1010 viajes) y el tiempo de sistema mejora.

@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time netconvert (90s/42s),duration,310,70.0290,83.0000,51.5174,1.0000,236.0000,21.5000,93.0000,163.5500
+Fixed-Time netconvert (90s/42s),routeLength,310,172.6278,222.7000,88.2637,0.0000,248.3900,103.7000,239.7200,241.3000
+Fixed-Time netconvert (90s/42s),departDelay,310,123.7489,67.5000,155.9309,0.0000,705.4800,0.9600,197.4700,469.2520
+Fixed-Time netconvert (90s/42s),timeLoss,310,55.6239,62.6150,46.6823,0.0000,218.4800,8.8500,73.8125,145.2105
+Fixed-Time netconvert (90s/42s),waitingTime,310,37.3032,40.0000,36.2783,0.0000,168.0000,0.0000,46.0000,109.3000
+Fixed-Time netconvert (90s/42s),avg_speed_ms,,3.9724,2.7874,2.7638,,,,,
+Fixed-Time netconvert (90s/42s),avg_speed_kmh,,14.3007,10.0348,,,,,,
+Fixed-Time netconvert (90s/42s),time_efficiency,,0.3873,0.2334,,,,,,
+Dynamic Optimization,duration,1045,61.8852,48.0000,55.4294,1.0000,358.0000,33.0000,70.0000,177.0000
+Dynamic Optimization,routeLength,1045,191.3038,225.7000,72.0817,0.0000,248.3900,193.6700,239.7200,241.3000
+Dynamic Optimization,departDelay,1045,642.5042,42.4400,973.7767,0.0000,3049.1600,1.5600,1229.1600,2719.2800
+Dynamic Optimization,timeLoss,1045,46.0572,31.1300,53.7930,0.0000,341.5900,14.0200,51.3800,161.0380
+Dynamic Optimization,waitingTime,1045,26.0163,6.0000,44.4179,0.0000,301.0000,0.0000,29.0000,111.8000
+Dynamic Optimization,avg_speed_ms,,4.5514,4.3447,2.4255,,,,,
+Dynamic Optimization,avg_speed_kmh,,16.3851,15.6411,,,,,,
+Dynamic Optimization,time_efficiency,,0.4087,0.3659,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.025195
+Mann-Whitney U Test,"U=185216.50, p=0.000122"
+Cohen's d Effect Size,d=0.1493 (small)
+Bootstrap 95% CI for Mean Diff,"[1.4018, 14.7461]"
+Point Estimate (A - B),8.1439
+Percent Improvement,+11.63%
+
+Interpretation
+,Moderate evidence of difference (p < 0.05)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+60.08%
+reason,El throughput sube +237.1% (310 → 1045 viajes) y el tiempo de sistema mejora.

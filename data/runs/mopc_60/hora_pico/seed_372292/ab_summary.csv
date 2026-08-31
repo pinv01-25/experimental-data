@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,1789,61.3080,50.0000,60.6539,1.0000,310.0000,2.0000,106.0000,176.6000
+Fixed-Time MOPC (60s/25s),routeLength,1789,133.3990,128.1000,94.1487,0.0000,248.3900,14.7300,224.3800,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,1789,691.0696,529.8800,670.4443,0.0000,2242.0500,7.8900,1255.5400,1899.8180
+Fixed-Time MOPC (60s/25s),timeLoss,1789,50.2217,39.3700,54.8881,0.0000,293.4200,0.1100,87.6300,157.7140
+Fixed-Time MOPC (60s/25s),waitingTime,1789,33.4360,23.0000,40.5123,0.0000,230.0000,0.0000,58.0000,116.0000
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,4.3447,2.7898,3.2859,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,15.6409,10.0433,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.4590,0.2761,,,,,,
+Dynamic Optimization,duration,2191,50.4322,21.0000,76.4440,1.0000,630.0000,2.0000,58.0000,222.0000
+Dynamic Optimization,routeLength,2191,131.2710,124.7200,92.6596,0.0000,248.3900,14.7300,221.8800,241.3000
+Dynamic Optimization,departDelay,2191,562.2661,348.3700,609.6466,0.0000,2447.0800,1.6500,1016.1150,1958.3000
+Dynamic Optimization,timeLoss,2191,39.4707,9.1800,72.7905,0.0000,610.9700,0.1100,40.5800,205.4350
+Dynamic Optimization,waitingTime,2191,26.1337,0.0000,60.5608,0.0000,531.0000,0.0000,23.0000,162.0000
+Dynamic Optimization,avg_speed_ms,,5.4312,5.6116,3.0817,,,,,
+Dynamic Optimization,avg_speed_kmh,,19.5523,20.2019,,,,,,
+Dynamic Optimization,time_efficiency,,0.5537,0.5467,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=2252015.50, p=0.000000"
+Cohen's d Effect Size,d=0.1558 (small)
+Bootstrap 95% CI for Mean Diff,"[6.5204, 15.0849]"
+Point Estimate (A - B),10.8758
+Percent Improvement,+17.74%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+0.07%
+reason,El throughput sube +22.5% (1789 → 2191 viajes) y el tiempo de sistema mejora.

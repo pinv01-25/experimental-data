@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,656,20.8537,2.0000,42.1649,1.0000,250.0000,1.0000,5.5000,118.0000
+Fixed-Time MOPC (60s/25s),routeLength,656,53.8365,12.2300,79.7547,0.0000,248.3900,11.4000,34.7325,226.9300
+Fixed-Time MOPC (60s/25s),departDelay,656,39.1212,1.0000,83.3464,0.0000,364.3200,0.4800,15.8400,251.9400
+Fixed-Time MOPC (60s/25s),timeLoss,656,16.0700,0.0700,36.4139,0.0000,232.1600,0.0300,2.4150,98.7725
+Fixed-Time MOPC (60s/25s),waitingTime,656,10.6845,0.0000,26.1422,0.0000,169.0000,0.0000,0.0000,72.2500
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,7.3336,7.3650,3.7430,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,26.4008,26.5140,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.7881,0.9500,,,,,,
+Dynamic Optimization,duration,1122,38.8414,2.0000,63.4655,1.0000,383.0000,1.0000,50.0000,168.8500
+Dynamic Optimization,routeLength,1122,95.1650,14.7300,95.7692,0.0000,248.3900,12.2300,210.6500,239.7200
+Dynamic Optimization,departDelay,1122,194.1321,57.4200,263.4048,0.0000,1027.8000,0.8400,290.1800,736.9400
+Dynamic Optimization,timeLoss,1122,30.7401,0.1900,58.3802,0.0000,367.9600,0.0500,34.6925,152.6890
+Dynamic Optimization,waitingTime,1122,19.9777,0.0000,45.1908,0.0000,296.0000,0.0000,16.7500,112.8500
+Dynamic Optimization,avg_speed_ms,,6.1919,6.1150,3.5756,,,,,
+Dynamic Optimization,avg_speed_kmh,,22.2910,22.0140,,,,,,
+Dynamic Optimization,time_efficiency,,0.6520,0.8950,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=284808.00, p=0.000000"
+Cohen's d Effect Size,d=-0.3181 (small)
+Bootstrap 95% CI for Mean Diff,"[-22.8898, -13.0840]"
+Point Estimate (A - B),-17.9877
+Percent Improvement,-86.26%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,misleading_regression
+headline_pct,-5.05%
+reason,"La media de duración ""empeora"" -86.3% pero el throughput sube +71.0% (656 → 1122 viajes): el baseline colapsó y su media solo promedia los viajes rápidos que escaparon."

@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,2000,61.3530,50.5000,63.0584,1.0000,310.0000,2.0000,107.0000,182.0000
+Fixed-Time MOPC (60s/25s),routeLength,2000,127.6644,124.7200,95.5900,0.0000,248.3900,14.7300,224.3800,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,2000,968.3576,860.0200,865.2575,0.0000,2861.8400,19.1000,1743.3300,2399.1860
+Fixed-Time MOPC (60s/25s),timeLoss,2000,50.7142,40.4600,56.8777,0.0000,289.2700,0.0900,89.2975,161.1725
+Fixed-Time MOPC (60s/25s),waitingTime,2000,33.2755,19.0000,41.8533,0.0000,232.0000,0.0000,58.0000,119.0000
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,4.5124,2.9490,3.4263,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,16.2445,10.6163,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.4779,0.2750,,,,,,
+Dynamic Optimization,duration,2106,47.6135,19.0000,66.3855,1.0000,361.0000,2.0000,60.0000,206.0000
+Dynamic Optimization,routeLength,2106,122.9997,123.1400,94.8809,0.0000,248.3900,14.4000,221.8800,241.3000
+Dynamic Optimization,departDelay,2106,685.3341,583.2000,632.9935,0.0000,2536.2400,36.3500,1150.1400,1916.1800
+Dynamic Optimization,timeLoss,2106,37.3148,8.6050,61.9209,0.0000,344.9500,0.0800,42.4475,186.4325
+Dynamic Optimization,waitingTime,2106,23.9487,0.0000,49.8963,0.0000,314.0000,0.0000,22.0000,147.5000
+Dynamic Optimization,avg_speed_ms,,5.4822,5.4013,3.2384,,,,,
+Dynamic Optimization,avg_speed_kmh,,19.7360,19.4446,,,,,,
+Dynamic Optimization,time_efficiency,,0.5650,0.5498,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=2386459.00, p=0.000000"
+Cohen's d Effect Size,d=0.2121 (small)
+Bootstrap 95% CI for Mean Diff,"[9.8143, 17.7320]"
+Point Estimate (A - B),13.7395
+Percent Improvement,+22.39%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,regression
+headline_pct,-7.31%
+reason,Empeoramiento de -7.3% con significancia estadística y throughput estable.

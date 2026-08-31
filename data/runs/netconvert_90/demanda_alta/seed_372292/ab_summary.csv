@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time netconvert (90s/42s),duration,484,19.7521,2.0000,38.2109,1.0000,179.0000,1.0000,13.0000,116.8000
+Fixed-Time netconvert (90s/42s),routeLength,484,56.8510,12.2300,81.3039,0.0000,248.3900,10.8575,94.7400,226.9300
+Fixed-Time netconvert (90s/42s),departDelay,484,21.6257,0.6800,49.1366,0.0000,275.9200,0.3600,1.7800,136.6960
+Fixed-Time netconvert (90s/42s),timeLoss,484,14.8081,0.0800,32.6673,0.0000,163.0400,0.0300,4.7200,97.0140
+Fixed-Time netconvert (90s/42s),waitingTime,484,10.0103,0.0000,23.5829,0.0000,125.0000,0.0000,0.0000,66.0000
+Fixed-Time netconvert (90s/42s),avg_speed_ms,,7.4423,7.3650,3.7625,,,,,
+Fixed-Time netconvert (90s/42s),avg_speed_kmh,,26.7925,26.5140,,,,,,
+Fixed-Time netconvert (90s/42s),time_efficiency,,0.7872,0.9450,,,,,,
+Dynamic Optimization,duration,2317,51.6595,27.0000,65.9008,1.0000,387.0000,2.0000,67.0000,198.0000
+Dynamic Optimization,routeLength,2317,134.0021,124.7200,92.3366,0.0000,248.3900,14.7300,223.9300,241.3000
+Dynamic Optimization,departDelay,2317,650.8457,529.2800,628.8452,0.0000,2913.0000,97.0800,921.0800,1999.5600
+Dynamic Optimization,timeLoss,2317,40.4530,13.3400,61.6842,0.0000,369.5800,0.1300,49.5600,179.4520
+Dynamic Optimization,waitingTime,2317,25.9612,0.0000,49.6538,0.0000,317.0000,0.0000,27.0000,141.0000
+Dynamic Optimization,avg_speed_ms,,5.0782,5.1763,3.0294,,,,,
+Dynamic Optimization,avg_speed_kmh,,18.2816,18.6348,,,,,,
+Dynamic Optimization,time_efficiency,,0.5225,0.4986,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=318968.50, p=0.000000"
+Cohen's d Effect Size,d=-0.5145 (medium)
+Bootstrap 95% CI for Mean Diff,"[-36.2191, -27.5773]"
+Point Estimate (A - B),-31.9074
+Percent Improvement,-161.54%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,misleading_regression
+headline_pct,+8.84%
+reason,"La media de duración ""empeora"" -161.5% pero el throughput sube +378.7% (484 → 2317 viajes): el baseline colapsó y su media solo promedia los viajes rápidos que escaparon."

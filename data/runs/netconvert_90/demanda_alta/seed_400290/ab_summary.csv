@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time netconvert (90s/42s),duration,1923,59.7603,55.0000,57.4732,1.0000,295.0000,2.0000,99.0000,161.0000
+Fixed-Time netconvert (90s/42s),routeLength,1923,133.8309,128.1000,94.0052,0.0000,248.3900,14.7300,224.3800,241.3000
+Fixed-Time netconvert (90s/42s),departDelay,1923,880.3204,852.1200,734.3195,0.0000,2791.8800,142.9400,1451.8600,2128.2160
+Fixed-Time netconvert (90s/42s),timeLoss,1923,48.6088,44.1300,51.5569,0.0000,278.4900,0.1200,82.0700,142.2350
+Fixed-Time netconvert (90s/42s),waitingTime,1923,33.5616,28.0000,39.0494,0.0000,195.0000,0.0000,56.0000,107.0000
+Fixed-Time netconvert (90s/42s),avg_speed_ms,,4.3886,2.8466,3.1718,,,,,
+Fixed-Time netconvert (90s/42s),avg_speed_kmh,,15.7991,10.2478,,,,,,
+Fixed-Time netconvert (90s/42s),time_efficiency,,0.4679,0.2762,,,,,,
+Dynamic Optimization,duration,1809,51.3400,24.0000,74.6107,1.0000,528.0000,2.0000,66.0000,201.6000
+Dynamic Optimization,routeLength,1809,128.3017,123.1400,94.2875,0.0000,248.3900,14.7300,221.8800,241.3000
+Dynamic Optimization,departDelay,1809,450.2533,233.3200,503.7867,0.0000,2207.9200,5.8400,672.1600,1507.9040
+Dynamic Optimization,timeLoss,1809,40.6415,11.8700,70.6763,0.0000,511.0800,0.0900,48.3000,185.5560
+Dynamic Optimization,waitingTime,1809,26.2156,0.0000,58.3640,0.0000,447.0000,0.0000,25.0000,141.0000
+Dynamic Optimization,avg_speed_ms,,5.2082,5.2300,3.0492,,,,,
+Dynamic Optimization,avg_speed_kmh,,18.7495,18.8280,,,,,,
+Dynamic Optimization,time_efficiency,,0.5388,0.5100,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000400
+Mann-Whitney U Test,"U=1964844.00, p=0.000000"
+Cohen's d Effect Size,d=0.1269 (small)
+Bootstrap 95% CI for Mean Diff,"[4.0419, 12.6763]"
+Point Estimate (A - B),8.4203
+Percent Improvement,+14.09%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,regression
+headline_pct,-20.01%
+reason,Empeoramiento de -20.0% con significancia estadística y throughput estable.

@@ -1,0 +1,330 @@
+{
+  "labels": [
+    "Fixed-Time ciclo largo (120s/57s)",
+    "Dynamic Optimization"
+  ],
+  "run_config": {
+    "zip_file": "scenarios/demanda_saturada.zip",
+    "mode": "dynamic-optimization",
+    "b_config": "dynamic-optimization (traffic-control/traffic-sync)",
+    "sim_steps": 4500,
+    "seed": 281772,
+    "cycle_time": 120.0
+  },
+  "statistics": {
+    "Fixed-Time ciclo largo (120s/57s)": {
+      "duration": {
+        "count": 1793,
+        "mean": 55.069157836029,
+        "median": 19.0,
+        "std": 65.66861401240666,
+        "min": 1.0,
+        "max": 388.0,
+        "q25": 2.0,
+        "q75": 100.0,
+        "q95": 184.0
+      },
+      "routeLength": {
+        "count": 1793,
+        "mean": 120.7268209704406,
+        "median": 123.14,
+        "std": 96.4574016969163,
+        "min": 0.0,
+        "max": 248.39,
+        "q25": 12.23,
+        "q75": 221.88,
+        "q95": 241.3
+      },
+      "departDelay": {
+        "count": 1793,
+        "mean": 804.1649525934189,
+        "median": 642.6,
+        "std": 754.4181720907942,
+        "min": 0.0,
+        "max": 2793.2,
+        "q25": 2.4,
+        "q75": 1489.44,
+        "q95": 2123.351999999999
+      },
+      "timeLoss": {
+        "count": 1793,
+        "mean": 44.96160066926938,
+        "median": 8.08,
+        "std": 59.98440119266945,
+        "min": 0.0,
+        "max": 372.93,
+        "q25": 0.07,
+        "q75": 81.65,
+        "q95": 164.44799999999995
+      },
+      "waitingTime": {
+        "count": 1793,
+        "mean": 32.684327941996656,
+        "median": 0.0,
+        "std": 48.59058946781665,
+        "min": 0.0,
+        "max": 315.0,
+        "q25": 0.0,
+        "q75": 60.0,
+        "q95": 127.39999999999986
+      },
+      "avg_speed_ms": {
+        "mean": 5.161553928998971,
+        "median": 5.23,
+        "std": 3.5240891128423653
+      },
+      "avg_speed_kmh": {
+        "mean": 18.581594144396295,
+        "median": 18.828000000000003
+      },
+      "time_efficiency": {
+        "mean": 0.5392133720474671,
+        "median": 0.5431034482758621
+      }
+    },
+    "Dynamic Optimization": {
+      "duration": {
+        "count": 2106,
+        "mean": 47.61348528015195,
+        "median": 19.0,
+        "std": 66.38551975949113,
+        "min": 1.0,
+        "max": 361.0,
+        "q25": 2.0,
+        "q75": 60.0,
+        "q95": 206.0
+      },
+      "routeLength": {
+        "count": 2106,
+        "mean": 122.99968660968662,
+        "median": 123.14,
+        "std": 94.88092967682596,
+        "min": 0.0,
+        "max": 248.39,
+        "q25": 14.4,
+        "q75": 221.88,
+        "q95": 241.3
+      },
+      "departDelay": {
+        "count": 2106,
+        "mean": 685.3340550807218,
+        "median": 583.2,
+        "std": 632.9935176874127,
+        "min": 0.0,
+        "max": 2536.24,
+        "q25": 36.35,
+        "q75": 1150.14,
+        "q95": 1916.18
+      },
+      "timeLoss": {
+        "count": 2106,
+        "mean": 37.31482431149097,
+        "median": 8.605,
+        "std": 61.92091726131149,
+        "min": 0.0,
+        "max": 344.95,
+        "q25": 0.08,
+        "q75": 42.4475,
+        "q95": 186.4325
+      },
+      "waitingTime": {
+        "count": 2106,
+        "mean": 23.94871794871795,
+        "median": 0.0,
+        "std": 49.89634129713444,
+        "min": 0.0,
+        "max": 314.0,
+        "q25": 0.0,
+        "q75": 22.0,
+        "q95": 147.5
+      },
+      "avg_speed_ms": {
+        "mean": 5.482215732286358,
+        "median": 5.401282051282052,
+        "std": 3.238402713716255
+      },
+      "avg_speed_kmh": {
+        "mean": 19.735976636230887,
+        "median": 19.444615384615386
+      },
+      "time_efficiency": {
+        "mean": 0.564982559965289,
+        "median": 0.54984375
+      }
+    }
+  },
+  "summary_statistics": {
+    "Fixed-Time ciclo largo (120s/57s)": {
+      "simulation_time": {
+        "start": 0.0,
+        "end": 3599.0,
+        "duration": 3599.0
+      },
+      "running": {
+        "mean": 32.39555555555555,
+        "max": 48.0,
+        "total": null
+      },
+      "halting": {
+        "mean": 20.934166666666666,
+        "max": 46.0,
+        "total": null
+      },
+      "waiting": {
+        "mean": 2478.6966666666667,
+        "max": 5166.0,
+        "total": null
+      },
+      "loaded": {
+        "mean": 3694.758333333333,
+        "max": 7000.0,
+        "total": null
+      },
+      "inserted": {
+        "mean": 1021.3033333333333,
+        "max": 1833.0,
+        "total": null
+      },
+      "collisions": {
+        "mean": 0.0,
+        "max": 0.0,
+        "total": 0.0
+      },
+      "congestion_ratio": {
+        "mean": 0.6269212531301902,
+        "max": 1.0
+      }
+    },
+    "Dynamic Optimization": {
+      "simulation_time": {
+        "start": 0.0,
+        "end": 3599.0,
+        "duration": 3599.0
+      },
+      "running": {
+        "mean": 37.216388888888886,
+        "max": 55.0,
+        "total": null
+      },
+      "halting": {
+        "mean": 22.988611111111112,
+        "max": 53.0,
+        "total": null
+      },
+      "waiting": {
+        "mean": 2277.0597222222223,
+        "max": 4840.0,
+        "total": null
+      },
+      "loaded": {
+        "mean": 3694.758333333333,
+        "max": 7000.0,
+        "total": null
+      },
+      "inserted": {
+        "mean": 1222.9402777777777,
+        "max": 2159.0,
+        "total": null
+      },
+      "collisions": {
+        "mean": 0.0,
+        "max": 0.0,
+        "total": 0.0
+      },
+      "congestion_ratio": {
+        "mean": 0.5638005942184955,
+        "max": 1.0
+      }
+    }
+  },
+  "statistical_tests": {
+    "permutation_test_pvalue": 0.0005998800239952009,
+    "bootstrap_ci_95": {
+      "lower": 3.3605554059286176,
+      "upper": 11.61175042200093,
+      "point_estimate": 7.455672555877051
+    },
+    "mann_whitney_u": {
+      "statistic": 1974462.0,
+      "pvalue": 0.012926539890468904
+    },
+    "cohens_d": 0.11286756105782096,
+    "mean_difference": 7.455672555877051,
+    "percent_improvement": 13.538744460332344,
+    "paired": {
+      "metric": "duration",
+      "n_paired": 1741,
+      "mean_delta": -3.738655944859276,
+      "median_delta": 0.0,
+      "pct_improved": 33.37162550258472,
+      "wilcoxon_pvalue": 1.6081687187218307e-05
+    },
+    "throughput": {
+      "completed_a": 1793,
+      "completed_b": 2106,
+      "throughput_change_pct": 17.456776352481874
+    },
+    "system_time": {
+      "system_time_a": 116624.0,
+      "system_time_b": 133979.0,
+      "inserted_a": 1833.0,
+      "inserted_b": 2159.0,
+      "system_time_improvement_pct": -14.881156537247907,
+      "mean_time_per_vehicle_a": 63.62465902891435,
+      "mean_time_per_vehicle_b": 62.056044465030105,
+      "mean_time_per_vehicle_improvement_pct": 2.465419206681149
+    },
+    "verdict": {
+      "verdict": "improvement",
+      "reason": "El throughput sube +17.5% (1793 \u2192 2106 viajes) y el tiempo de sistema mejora.",
+      "headline_pct": -14.881156537247907
+    }
+  },
+  "generated_files": [
+    "01_duration_hist_cdf.png",
+    "02_duration_boxplot.png",
+    "03_duration_violin.png",
+    "04_timeloss_violin.png",
+    "05_multi_metric_violin.png",
+    "06_metric_comparison_bars.png",
+    "07_duration_time_series.png",
+    "08_timeloss_time_series.png",
+    "09_summary_comparison.png",
+    "10_congestion_timeline.png",
+    "11_efficiency_comparison.png",
+    "12_speed_distribution.png",
+    "13_waiting_time_analysis.png",
+    "14_percentile_comparison.png",
+    "15_correlation_heatmap_A.png",
+    "16_correlation_heatmap_B.png",
+    "17_fcd_comparison.png",
+    "18_improvement_summary.png",
+    "19_time_series_mean_Fixed-Time_ciclo_largo_120s_57s.png",
+    "20_time_series_mean_Dynamic_Optimization.png",
+    "21_incomplete_histogram_A.png",
+    "22_incomplete_cdf_A.png",
+    "23_incomplete_boxplot_A.png",
+    "24_incomplete_scatter_A.png",
+    "25_incomplete_histogram_B.png",
+    "26_incomplete_cdf_B.png",
+    "27_incomplete_boxplot_B.png",
+    "28_incomplete_scatter_B.png",
+    "29_qq_duration.png",
+    "30_paired_scatter.png",
+    "31_paired_delta_hist.png",
+    "32_throughput_timeline.png",
+    "ab_summary.csv"
+  ],
+  "data_info": {
+    "Fixed-Time ciclo largo (120s/57s)": {
+      "tripinfo_count": 1793,
+      "summary_rows": 3600,
+      "fcd_rows": 23338
+    },
+    "Dynamic Optimization": {
+      "tripinfo_count": 2106,
+      "summary_rows": 3600,
+      "fcd_rows": 26818
+    }
+  }
+}

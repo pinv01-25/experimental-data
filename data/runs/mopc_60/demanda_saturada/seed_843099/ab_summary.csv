@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,2018,60.8608,51.0000,61.1891,1.0000,297.0000,2.0000,103.0000,176.0000
+Fixed-Time MOPC (60s/25s),routeLength,2018,128.6578,124.7200,95.3470,0.0000,248.3900,14.7300,224.3800,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,2018,982.5196,863.9600,866.8666,0.0000,2827.2800,21.1400,1746.4500,2429.2500
+Fixed-Time MOPC (60s/25s),timeLoss,2018,50.1728,40.5850,55.0679,0.0000,280.7100,0.0900,84.7950,157.9925
+Fixed-Time MOPC (60s/25s),waitingTime,2018,32.8598,21.5000,40.4738,0.0000,223.0000,0.0000,55.0000,118.3000
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,4.4803,2.8667,3.4188,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,16.1292,10.3202,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.4716,0.2705,,,,,,
+Dynamic Optimization,duration,2562,46.1553,23.0000,62.8089,1.0000,394.0000,2.0000,58.0000,180.0000
+Dynamic Optimization,routeLength,2562,129.3263,123.1400,92.8895,0.0000,248.3900,14.7300,221.8800,241.3000
+Dynamic Optimization,departDelay,2562,777.1626,630.9200,734.1229,0.0000,2815.4400,113.3700,1238.3000,2276.6560
+Dynamic Optimization,timeLoss,2562,35.3353,10.1350,58.7377,0.0000,375.8900,0.1000,40.3450,163.0240
+Dynamic Optimization,waitingTime,2562,21.0484,0.0000,45.6712,0.0000,319.0000,0.0000,20.7500,116.9500
+Dynamic Optimization,avg_speed_ms,,5.4521,5.5202,3.0804,,,,,
+Dynamic Optimization,avg_speed_kmh,,19.6276,19.8728,,,,,,
+Dynamic Optimization,time_efficiency,,0.5536,0.5313,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=2942662.00, p=0.000000"
+Cohen's d Effect Size,d=0.2368 (small)
+Bootstrap 95% CI for Mean Diff,"[11.1839, 18.4520]"
+Point Estimate (A - B),14.7054
+Percent Improvement,+24.16%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,-0.64%
+reason,El throughput sube +27.0% (2018 → 2562 viajes) y el tiempo de sistema mejora.

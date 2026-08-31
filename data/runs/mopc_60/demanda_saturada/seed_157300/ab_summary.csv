@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,855,31.4678,2.0000,48.2232,1.0000,234.0000,1.0000,52.0000,129.3000
+Fixed-Time MOPC (60s/25s),routeLength,855,78.2024,14.7300,91.5520,0.0000,248.3900,12.2300,193.6700,239.7200
+Fixed-Time MOPC (60s/25s),departDelay,855,122.1921,2.0000,180.8739,0.0000,647.0000,0.6400,237.9400,517.0400
+Fixed-Time MOPC (60s/25s),timeLoss,855,24.7893,0.1000,41.9038,0.0000,215.8900,0.0400,42.3600,111.4760
+Fixed-Time MOPC (60s/25s),waitingTime,855,16.0526,0.0000,29.8809,0.0000,168.0000,0.0000,27.0000,80.0000
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,6.3654,6.1150,3.7720,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,22.9156,22.0140,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.6867,0.9350,,,,,,
+Dynamic Optimization,duration,2435,49.4259,23.0000,65.2836,1.0000,393.0000,2.0000,65.0000,197.3000
+Dynamic Optimization,routeLength,2435,128.3221,124.7200,94.1475,0.0000,248.3900,14.7300,221.8800,241.3000
+Dynamic Optimization,departDelay,2435,855.9128,726.0400,761.1162,0.0000,3048.2800,78.9200,1426.4000,2327.0520
+Dynamic Optimization,timeLoss,2435,38.6749,10.5500,60.8999,0.0000,374.6400,0.0900,47.7450,179.9400
+Dynamic Optimization,waitingTime,2435,24.6875,0.0000,47.7851,0.0000,307.0000,0.0000,25.0000,136.3000
+Dynamic Optimization,avg_speed_ms,,5.3042,5.2633,3.1317,,,,,
+Dynamic Optimization,avg_speed_kmh,,19.0950,18.9480,,,,,,
+Dynamic Optimization,time_efficiency,,0.5482,0.5280,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=794816.00, p=0.000000"
+Cohen's d Effect Size,d=-0.2929 (small)
+Bootstrap 95% CI for Mean Diff,"[-21.9172, -13.7512]"
+Point Estimate (A - B),-17.9580
+Percent Improvement,-57.07%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,misleading_regression
+headline_pct,+9.30%
+reason,"La media de duración ""empeora"" -57.1% pero el throughput sube +184.8% (855 → 2435 viajes): el baseline colapsó y su media solo promedia los viajes rápidos que escaparon."

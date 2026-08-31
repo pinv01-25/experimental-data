@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time netconvert (90s/42s),duration,373,82.0777,87.0000,60.3977,1.0000,366.0000,30.0000,110.0000,171.4000
+Fixed-Time netconvert (90s/42s),routeLength,373,177.4150,225.7000,87.3231,0.0000,248.3900,121.1000,239.7200,241.3000
+Fixed-Time netconvert (90s/42s),departDelay,373,142.7841,69.0800,168.3913,0.0000,666.5600,1.6400,252.0400,504.5040
+Fixed-Time netconvert (90s/42s),timeLoss,373,67.3353,67.2300,55.8528,0.0000,346.1600,13.1400,93.8100,153.5440
+Fixed-Time netconvert (90s/42s),waitingTime,373,45.3646,42.0000,44.3111,0.0000,295.0000,0.0000,65.0000,126.0000
+Fixed-Time netconvert (90s/42s),avg_speed_ms,,3.6210,2.5851,2.6967,,,,,
+Fixed-Time netconvert (90s/42s),avg_speed_kmh,,13.0356,9.3062,,,,,,
+Fixed-Time netconvert (90s/42s),time_efficiency,,0.3544,0.2166,,,,,,
+Dynamic Optimization,duration,984,61.7551,43.0000,59.1235,1.0000,342.0000,31.0000,73.0000,192.8500
+Dynamic Optimization,routeLength,984,191.1447,225.7000,73.2872,0.0000,248.3900,193.6700,239.7200,241.3000
+Dynamic Optimization,departDelay,984,537.6857,19.8600,933.0677,0.0000,3118.8000,1.1200,415.2900,2654.3480
+Dynamic Optimization,timeLoss,984,45.9264,23.9650,57.6874,0.0000,324.5900,11.7100,55.0325,175.0555
+Dynamic Optimization,waitingTime,984,26.0711,2.5000,46.5744,0.0000,259.0000,0.0000,30.0000,136.0000
+Dynamic Optimization,avg_speed_ms,,4.8493,5.1378,2.5887,,,,,
+Dynamic Optimization,avg_speed_kmh,,17.4574,18.4961,,,,,,
+Dynamic Optimization,time_efficiency,,0.4362,0.4347,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=228264.50, p=0.000000"
+Cohen's d Effect Size,d=0.3417 (small)
+Bootstrap 95% CI for Mean Diff,"[13.0279, 27.2338]"
+Point Estimate (A - B),20.3227
+Percent Improvement,+24.76%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+57.91%
+reason,El throughput sube +163.8% (373 → 984 viajes) y el tiempo de sistema mejora.

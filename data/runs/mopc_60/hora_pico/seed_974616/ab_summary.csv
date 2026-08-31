@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,1724,60.3329,51.0000,60.9272,1.0000,343.0000,2.0000,102.0000,173.0000
+Fixed-Time MOPC (60s/25s),routeLength,1724,132.3243,125.1000,94.1726,0.0000,248.3900,14.7300,224.3800,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,1724,635.3471,507.0200,623.9342,0.0000,2148.0500,2.5250,1154.3075,1790.8010
+Fixed-Time MOPC (60s/25s),timeLoss,1724,49.3348,40.2900,55.3222,0.0000,325.5600,0.1075,83.7600,156.2820
+Fixed-Time MOPC (60s/25s),waitingTime,1724,32.6172,22.0000,41.8289,0.0000,270.0000,0.0000,53.0000,116.8500
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,4.3058,2.9828,3.1622,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,15.5008,10.7382,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.4622,0.2778,,,,,,
+Dynamic Optimization,duration,861,30.0674,12.0000,49.2709,1.0000,421.0000,1.0000,37.0000,136.0000
+Dynamic Optimization,routeLength,861,101.4521,94.7400,96.4350,0.0000,248.3900,12.2300,210.6500,239.7200
+Dynamic Optimization,departDelay,861,32.0156,0.8300,77.4591,0.0000,486.9500,0.3800,15.6100,178.0600
+Dynamic Optimization,timeLoss,861,21.5190,2.6700,44.7032,0.0000,405.3400,0.0500,19.2500,118.5200
+Dynamic Optimization,waitingTime,861,12.9826,0.0000,34.9562,0.0000,343.0000,0.0000,5.0000,79.0000
+Dynamic Optimization,avg_speed_ms,,6.5913,6.5818,3.2851,,,,,
+Dynamic Optimization,avg_speed_kmh,,23.7289,23.6945,,,,,,
+Dynamic Optimization,time_efficiency,,0.6805,0.7730,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=977017.00, p=0.000000"
+Cohen's d Effect Size,d=0.5281 (medium)
+Bootstrap 95% CI for Mean Diff,"[25.8940, 34.6589]"
+Point Estimate (A - B),30.2656
+Percent Improvement,+50.16%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,misleading_improvement
+headline_pct,-10.83%
+reason,"La media de duración ""mejora"" +50.2% pero el throughput cae -50.1% (1724 → 861 viajes): sesgo de supervivencia — los viajes lentos no llegan a completarse."

@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time MOPC (60s/25s),duration,1794,63.6806,53.0000,61.1132,1.0000,322.0000,2.0000,109.0000,175.3500
+Fixed-Time MOPC (60s/25s),routeLength,1794,134.4207,128.1000,94.2630,0.0000,248.3900,14.7300,224.3800,241.3000
+Fixed-Time MOPC (60s/25s),departDelay,1794,697.4553,526.5300,679.1536,0.0000,2270.0500,8.5725,1237.8700,1895.3645
+Fixed-Time MOPC (60s/25s),timeLoss,1794,52.5562,41.6950,55.1662,0.0000,303.8300,0.1100,90.9275,157.5425
+Fixed-Time MOPC (60s/25s),waitingTime,1794,34.7664,27.0000,40.6933,0.0000,261.0000,0.0000,60.7500,115.3500
+Fixed-Time MOPC (60s/25s),avg_speed_ms,,4.2105,2.5651,3.2659,,,,,
+Fixed-Time MOPC (60s/25s),avg_speed_kmh,,15.1578,9.2343,,,,,,
+Fixed-Time MOPC (60s/25s),time_efficiency,,0.4456,0.2379,,,,,,
+Dynamic Optimization,duration,1488,43.0531,17.0000,71.3840,1.0000,441.0000,1.0000,48.0000,178.3000
+Dynamic Optimization,routeLength,1488,120.6296,123.1400,94.5445,0.0000,248.3900,12.2300,218.7000,241.3000
+Dynamic Optimization,departDelay,1488,227.7808,56.8200,323.4002,0.0000,1471.6500,0.7200,371.5550,987.4315
+Dynamic Optimization,timeLoss,1488,33.0151,7.2250,67.6416,0.0000,423.4000,0.0700,31.8125,161.5505
+Dynamic Optimization,waitingTime,1488,21.8602,0.0000,56.9611,0.0000,372.0000,0.0000,16.2500,119.3000
+Dynamic Optimization,avg_speed_ms,,5.9261,6.1150,3.2531,,,,,
+Dynamic Optimization,avg_speed_kmh,,21.3338,22.0140,,,,,,
+Dynamic Optimization,time_efficiency,,0.5995,0.5891,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=1651423.00, p=0.000000"
+Cohen's d Effect Size,d=0.3127 (small)
+Bootstrap 95% CI for Mean Diff,"[16.1139, 25.1727]"
+Point Estimate (A - B),20.6275
+Percent Improvement,+32.39%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,misleading_improvement
+headline_pct,-10.83%
+reason,"La media de duración ""mejora"" +32.4% pero el throughput cae -17.1% (1794 → 1488 viajes): sesgo de supervivencia — los viajes lentos no llegan a completarse."

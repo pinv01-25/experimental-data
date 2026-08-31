@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time netconvert (90s/42s),duration,1491,64.9624,58.0000,55.3632,1.0000,234.0000,14.0000,100.0000,167.0000
+Fixed-Time netconvert (90s/42s),routeLength,1491,152.7534,200.6700,86.1709,0.0000,248.3900,96.3200,225.7000,245.8900
+Fixed-Time netconvert (90s/42s),departDelay,1491,178.7768,20.0800,311.3882,0.0000,1555.4400,0.7600,231.5400,952.2400
+Fixed-Time netconvert (90s/42s),timeLoss,1491,52.3423,45.5300,50.4778,0.0000,212.9600,5.4900,83.4950,148.0100
+Fixed-Time netconvert (90s/42s),waitingTime,1491,36.4346,31.0000,39.1951,0.0000,176.0000,0.0000,59.0000,113.5000
+Fixed-Time netconvert (90s/42s),avg_speed_ms,,4.1001,2.8167,2.9123,,,,,
+Fixed-Time netconvert (90s/42s),avg_speed_kmh,,14.7604,10.1400,,,,,,
+Fixed-Time netconvert (90s/42s),time_efficiency,,0.4092,0.2519,,,,,,
+Dynamic Optimization,duration,1617,39.3556,30.0000,36.2216,1.0000,223.0000,12.0000,58.0000,111.0000
+Dynamic Optimization,routeLength,1617,156.2524,203.1700,84.9823,0.0000,248.3900,96.7000,226.9300,245.8900
+Dynamic Optimization,departDelay,1617,102.0072,0.9200,253.4479,0.0000,1030.7600,0.4400,12.0000,880.6240
+Dynamic Optimization,timeLoss,1617,26.4907,11.8100,32.5614,0.0000,209.0400,2.5900,40.5800,94.2160
+Dynamic Optimization,waitingTime,1617,14.4051,0.0000,23.3564,0.0000,173.0000,0.0000,23.0000,63.0000
+Dynamic Optimization,avg_speed_ms,,5.9161,5.8187,2.9371,,,,,
+Dynamic Optimization,avg_speed_kmh,,21.2978,20.9474,,,,,,
+Dynamic Optimization,time_efficiency,,0.5470,0.5514,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=1497982.00, p=0.000000"
+Cohen's d Effect Size,d=0.5519 (medium)
+Bootstrap 95% CI for Mean Diff,"[22.3079, 28.8687]"
+Point Estimate (A - B),25.6068
+Percent Improvement,+39.42%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,improvement
+headline_pct,+34.69%
+reason,Mejora de +34.7% con significancia estadística y throughput estable.

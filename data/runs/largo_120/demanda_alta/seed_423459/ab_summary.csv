@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time ciclo largo (120s/57s),duration,1169,56.0180,17.0000,67.4473,1.0000,358.0000,1.0000,103.0000,182.6000
+Fixed-Time ciclo largo (120s/57s),routeLength,1169,115.6171,123.1400,96.0708,0.0000,248.3900,12.2300,219.9300,241.3000
+Fixed-Time ciclo largo (120s/57s),departDelay,1169,385.1745,251.4000,397.1188,0.0000,1606.8400,0.8400,724.5600,1071.0160
+Fixed-Time ciclo largo (120s/57s),timeLoss,1169,46.4148,7.2700,61.6267,0.0000,341.4700,0.0700,83.7200,165.5460
+Fixed-Time ciclo largo (120s/57s),waitingTime,1169,34.4996,0.0000,49.7237,0.0000,279.0000,0.0000,62.0000,132.2000
+Fixed-Time ciclo largo (120s/57s),avg_speed_ms,,5.2020,5.2300,3.7009,,,,,
+Fixed-Time ciclo largo (120s/57s),avg_speed_kmh,,18.7271,18.8280,,,,,,
+Fixed-Time ciclo largo (120s/57s),time_efficiency,,0.5454,0.5616,,,,,,
+Dynamic Optimization,duration,1258,45.2623,19.0000,62.3240,1.0000,367.0000,1.0000,61.0000,194.1500
+Dynamic Optimization,routeLength,1258,118.1656,123.1400,95.9163,0.0000,248.3900,12.2300,220.0400,241.3000
+Dynamic Optimization,departDelay,1258,290.4053,146.7000,320.6707,0.0000,1272.4000,0.8400,554.1700,892.0960
+Dynamic Optimization,timeLoss,1258,35.4501,8.0200,57.7311,0.0000,348.2500,0.0700,43.9100,175.9850
+Dynamic Optimization,waitingTime,1258,22.6717,0.0000,44.8174,0.0000,284.0000,0.0000,25.0000,131.3000
+Dynamic Optimization,avg_speed_ms,,5.6068,5.5973,3.3744,,,,,
+Dynamic Optimization,avg_speed_kmh,,20.1845,20.1502,,,,,,
+Dynamic Optimization,time_efficiency,,0.5750,0.5606,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=774188.00, p=0.022822"
+Cohen's d Effect Size,d=0.1659 (small)
+Bootstrap 95% CI for Mean Diff,"[5.6337, 16.0634]"
+Point Estimate (A - B),10.7556
+Percent Improvement,+19.20%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,regression
+headline_pct,-10.00%
+reason,Empeoramiento de -10.0% con significancia estadística y throughput estable.

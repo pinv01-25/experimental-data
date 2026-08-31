@@ -1,0 +1,36 @@
+A/B Test Summary Report
+
+Metric Statistics
+label,metric,count,mean,median,std,min,max,q25,q75,q95
+Fixed-Time netconvert (90s/42s),duration,1791,63.6700,57.0000,64.6099,1.0000,450.0000,2.0000,103.5000,176.0000
+Fixed-Time netconvert (90s/42s),routeLength,1791,131.8488,124.7200,94.4451,0.0000,248.3900,14.7300,224.3800,242.0950
+Fixed-Time netconvert (90s/42s),departDelay,1791,808.6854,782.6000,687.4763,0.0000,2725.8000,91.4000,1339.5600,1956.5000
+Fixed-Time netconvert (90s/42s),timeLoss,1791,52.7164,44.7600,58.8600,0.0000,431.3800,0.1050,84.9500,158.2950
+Fixed-Time netconvert (90s/42s),waitingTime,1791,37.3707,26.0000,46.2833,0.0000,362.0000,0.0000,62.0000,123.5000
+Fixed-Time netconvert (90s/42s),avg_speed_ms,,4.3940,2.7393,3.3365,,,,,
+Fixed-Time netconvert (90s/42s),avg_speed_kmh,,15.8184,9.8613,,,,,,
+Fixed-Time netconvert (90s/42s),time_efficiency,,0.4664,0.2674,,,,,,
+Dynamic Optimization,duration,833,36.0792,13.0000,57.3367,1.0000,329.0000,1.0000,46.0000,163.4000
+Dynamic Optimization,routeLength,833,99.3538,94.7400,96.3883,0.0000,248.3900,12.2300,212.2300,241.3000
+Dynamic Optimization,departDelay,833,103.8693,1.5600,166.1041,0.0000,661.9600,0.5200,176.6000,474.8880
+Dynamic Optimization,timeLoss,833,27.7219,3.9500,52.4322,0.0000,310.0900,0.0400,30.9200,145.2820
+Dynamic Optimization,waitingTime,833,17.4934,0.0000,40.0990,0.0000,243.0000,0.0000,16.0000,107.0000
+Dynamic Optimization,avg_speed_ms,,6.2973,6.1570,3.5013,,,,,
+Dynamic Optimization,avg_speed_kmh,,22.6701,22.1652,,,,,,
+Dynamic Optimization,time_efficiency,,0.6504,0.6863,,,,,,
+
+Statistical Test Results
+Permutation Test (H0: equal means),p=0.000200
+Mann-Whitney U Test,"U=952471.00, p=0.000000"
+Cohen's d Effect Size,d=0.4422 (small)
+Bootstrap 95% CI for Mean Diff,"[22.6652, 32.4580]"
+Point Estimate (A - B),27.5908
+Percent Improvement,+43.33%
+
+Interpretation
+,Strong evidence of difference (p < 0.01)
+
+Veredicto (insesgado por supervivencia)
+verdict,misleading_improvement
+headline_pct,-18.69%
+reason,"La media de duración ""mejora"" +43.3% pero el throughput cae -53.5% (1791 → 833 viajes): sesgo de supervivencia — los viajes lentos no llegan a completarse."
